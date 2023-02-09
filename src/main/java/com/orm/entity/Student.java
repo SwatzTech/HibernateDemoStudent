@@ -31,6 +31,7 @@ public class Student {
 	private String name;
 	
 	@Transient
+	@Column(columnDefinition = "default 0")
 	private int age;
 	
 	@Temporal(TemporalType.DATE)
